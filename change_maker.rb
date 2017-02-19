@@ -30,7 +30,7 @@ def name_of_coin(coin)
 
 		when 25 then :quarter
 		when 10 then :dime
-		when 5 then :nickle
+		when 5 then :nickel
 		when 1 then :penny
 	end
 end

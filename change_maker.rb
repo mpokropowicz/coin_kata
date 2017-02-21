@@ -7,18 +7,18 @@ end
 
 def change(amount)
 
-	available_coins = {quarter: 25, dime: 10, nickel: 5, penny: 1}
-	coins = {}
-	remaining_amount = amount
+	available_coins = {quarter: 25, dime: 10, nickel: 5, penny: 1}; coins = {}
 
 	available_coins.each do |coin, value|
 
-		if remaining_amount/value > 0
+		if amount/value > 0
 
 			coins[coin] = 0
-    		(remaining_amount/value).times{ coins[coin] += 1; remaining_amount -= value }
+    		(amount/value).times{ coins[coin] += 1; amount -= value }
     	end
 	end
 
 	coins
 end
+
+print change(93)

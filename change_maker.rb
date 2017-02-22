@@ -21,4 +21,3 @@ def change(amount)
 	coins
 end
 
-print change(93)

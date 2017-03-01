@@ -4,18 +4,15 @@
  	<title>Make Change</title>
  	<meta charset="utf-8">
  	<link rel="stylesheet" href="style.css">
+<div class=title>Make Change</div>
 <form method="post" action="make_change">
   <label>
-    <input type="text" name="total"required />
-    <div class="label-text">Total</div>
-  </label>
-  <label>
-    <input type="text" name="given" required />
-    <div class="label-text">Amount Received</div>
+    <input type="text" name="total" required />
+    <div class="label-text">Change</div>
   </label>
   <button>Submit</button>
 </form>
 <br>
 <label>
-<div class="label-text"><%= yield %></div>
+	<div class="label-text"><%= yield %></div>
 </label>

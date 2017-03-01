@@ -20,4 +20,3 @@ def change(amount)
 
 	coins
 end
-
